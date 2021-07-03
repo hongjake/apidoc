@@ -2,5 +2,5 @@
   "name": "接口文档",
   "url": "",
   "title": "接口文档",
-  "demoCommand": "apidoc -i ./api/ -o ./doc/"
+  "demoCommand": "apidoc -i ./api/ -o ./docs/"
 }
