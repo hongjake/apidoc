@@ -4,7 +4,7 @@
 
 ### 2.友好的文档展示页面
 
-
+![img](./images/img.png)
 
 ### 3.注释生成接口文档的原理
 
@@ -16,15 +16,11 @@
 
 ①安装：
 
-
-
 ```undefined
 npm install apidoc -g
 ```
 
 ②验证安装是否成功：
-
-
 
 ```undefined
 apidoc -h          出现帮助信息则安装成功
@@ -33,8 +29,6 @@ apidoc -h          出现帮助信息则安装成功
 ③配置apidoc.json文件
 
 > 在项目的根目录建立apidoc.json文件
-
-
 
 ```json
 {
@@ -48,26 +42,11 @@ apidoc -h          出现帮助信息则安装成功
 
 ### 5.Apidoc使用
 
-
-
 ```cpp
 apidoc -i ./api/  -o ./docs/       生成文档的命令 
 ```
 
-> /src  ： 生成接口文档的源文件
->  public/static  ： 生成的接口文档地址（一般放在静态文件夹下）
-
-### 6.常用Apidoc注释规则举例
-
-> @api {post} add_team  新建球队   =>    {请求方式}  路由  接口名称
->  @apiGroup  team                             =>     分组的名称，方便管理分组
->  @apiParam {String}   name     名字. =>  {参数类型} [参数名]  参数描述
->  @apiSuccess {String} msg 详细信息.   =>  {响应的类型}  参数 响应描述
->  @apiSuccessExample Success-Response: =>  成功返回的示例，可返json
->  @apiErrorExample {json} Error-Response:  =>  失败返回的示例，可返json
->  @apiDescription This is the Description   =>   接口的描述
->  [1.官方手册](https://links.jianshu.com/go?to=http%3A%2F%2Fapidocjs.com%2F%23params)    
->  [2.中文说明](https://links.jianshu.com/go?to=https%3A%2F%2Fblog.csdn.net%2Fhjh15827475896%2Farticle%2Fdetails%2F79398369)
-
+> ./api/  ： 生成接口文档的源文件
+> ./docs/  ： 生成的接口文档地址（一般放在静态文件夹下）
 
 
